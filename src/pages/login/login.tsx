@@ -8,9 +8,11 @@ const Login = () => {
     <View style={styles.container}>
       <View style={styles.header}>
         <Image source={logo} style={styles.logo} />
-        <Text style={styles.text}>
-          Ajuda
-        </Text>
+        <TouchableOpacity style={styles.headerButton}>
+          <Text style={styles.text}>
+            Ajuda
+          </Text>
+        </TouchableOpacity>
       </View>
 
       <TextInput style={styles.input}
@@ -30,6 +32,29 @@ const Login = () => {
           Entrar
         </Text>
       </TouchableOpacity>
+
+      <Text style={styles.ou}>
+        OU
+      </Text>
+
+      <TouchableOpacity
+        style={styles.buttonOu}
+      >
+        <Text style={styles.buttonText}>
+          Usar um código de acesso
+        </Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity style={styles.text1}>
+        <Text style={styles.text}>
+          Esqueceu a senha?
+        </Text>
+      </TouchableOpacity>
+
+      <Text style={styles.text2}>
+        O acesso está protegido pelo Google reCAPTCHA
+        para garantir que você não é um robô.<Text style={{ fontWeight: 'bold' }}> Saiba mais.</Text>
+      </Text>
 
     </View>
   )

@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet, Text } from "react-native";
 
 export const styles = StyleSheet.create({
   container: {
@@ -6,6 +6,7 @@ export const styles = StyleSheet.create({
     backgroundColor: '#000000',
     alignItems: 'center',
     justifyContent: 'center',
+
   },
 
   header: {
@@ -27,12 +28,16 @@ export const styles = StyleSheet.create({
     height: 30
   },
 
-  text: {
+  headerButton: {
     position: 'absolute',
     right: 20,
     top: 70,
-    color: '#fff',
+  },
+
+  text: {
     fontWeight: 'bold',
+    color: '#fff'
+
   },
 
   input: {
@@ -59,8 +64,37 @@ export const styles = StyleSheet.create({
 
   buttonText: {
     color: '#FFF',
-    fontSize: 17,
+    fontSize: 16,
     fontWeight: 'bold'
   },
+
+  ou: {
+    margin: 20,
+    color: '#FFF',
+    fontSize: 16,
+
+  },
+
+  buttonOu: {
+    backgroundColor: '#313131',
+    width: 300,
+    height: 36,
+    borderRadius: 3,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
+  text1: {
+    margin: 30,
+  },
+
+  text2: {
+    color: '#cccccc',
+    textAlign: 'center',
+    marginLeft: 40,
+    marginRight: 40,
+    fontSize: 13
+
+  }
 
 })
